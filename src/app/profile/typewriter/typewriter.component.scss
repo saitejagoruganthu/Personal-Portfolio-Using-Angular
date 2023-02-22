@@ -1,0 +1,20 @@
+.myIntrotw
+{
+    font-size: 30px;
+}
+
+@media screen and (min-width:426px) and (max-width:540px) 
+{
+    .myIntrotw
+    {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width:425px) 
+{
+    .myIntrotw
+    {
+        font-size: 23px;
+    }
+}

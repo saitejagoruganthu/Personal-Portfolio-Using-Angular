@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import '~swiper/swiper-bundle.css';
+
+body
+{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.swiper-slide
+{
+    background: rgb(218, 122, 87);
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active
+{
+    background: brown;
+}
+
+.ngx-pagination .current
+{
+    background: rgb(218, 122, 87) !important;
+}

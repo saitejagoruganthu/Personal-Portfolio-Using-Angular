@@ -1,0 +1,150 @@
+#contact
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .container
+    {
+        padding: 2em;
+    }
+
+    .card
+    {
+        -webkit-box-shadow: 9px 10px 38px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 10px 38px 0px rgba(0,0,0,0.75);
+        box-shadow: 9px 10px 38px 0px rgba(0,0,0,0.75);
+
+        .title
+        {
+            font-weight: bolder;
+            margin: 1em;
+        }
+
+        .formContainer
+        {
+            display: flex;
+            flex-direction: column;
+            //width: 30em;
+            width: 250px;
+            margin: auto;
+            
+            .input-group
+            {
+                margin-bottom: 1em;
+
+                .input-group-text
+                {
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+
+                    .fa
+                    {
+                        color: rgb(218, 122, 87);
+                    }
+                }
+
+                .form-control
+                {
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                }
+            }
+
+            .form-group
+            {
+                margin-bottom: 1em;
+
+                .form-control
+                {
+                    min-height: 8em;
+                }
+            }
+
+            .btnContainer
+            {
+                display: flex;
+                justify-content: center;
+
+                .btn
+                {
+                    margin-bottom: 1em;
+                    background-color: brown;
+                    border: none;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover
+                    {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) 
+{
+    #contact
+    {
+        padding-top: 30px;
+        
+        .card
+        {
+            .title
+            {
+                font-size: 18px;
+            }
+
+            .formContainer
+            {
+                .p
+                {
+                    font-size: 15px;
+                }
+
+                .input-group
+                {
+                    .input-group-text
+                    {
+                        font-size: 14px;
+                    }
+
+                    .form-control
+                    {
+                        font-size: 14px;
+                    }
+                }
+
+                .form-group
+                {
+                    .form-control
+                    {
+                        font-size: 14px;
+                    }
+                }
+
+                .btnContainer
+                {
+                    .btn
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:1023px) {
+    .formContainer
+    {
+        width: 400px !important;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .formContainer
+    {
+        width: 600px !important;
+    }
+}

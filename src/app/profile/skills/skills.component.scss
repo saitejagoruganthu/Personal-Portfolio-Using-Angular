@@ -1,0 +1,100 @@
+#skill
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .container
+    {
+        padding: 1em;
+    }
+
+    .title
+    {
+        font-weight: bolder;
+    }
+
+    .card
+    {
+        -webkit-box-shadow: 9px 10px 38px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 10px 38px 0px rgba(0,0,0,0.75);
+        box-shadow: 9px 10px 38px 0px rgba(0,0,0,0.75);
+    }
+    
+    .card-body
+    {
+        min-height: 190px;
+
+        .progress-container 
+        {
+            position: relative;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .progress-container.progress-primary
+        {
+            .progress-badge
+            {
+                color: #000;
+                font-size: 0.8571em;
+            }
+
+            .progress
+            {
+                background: rgba(10, 49, 68, 0.349);
+                height: 5px;
+                font-size: 18px;
+                box-shadow: none;
+                margin-top: 14px;
+            }
+
+            .progress-bar
+            {
+                height: 5px;
+                background: rgb(169, 97, 72);
+                box-shadow: none;
+                transform: scaleX(0);
+                transition: transform 1s ease-in-out;
+                transform-origin: 0% 0%;
+            }
+
+            .aos-animate
+            {
+                transform: scaleX(1);
+            }
+
+            .progress-value
+            {
+                color: #000;
+                position: absolute;
+                top: 2px;
+                right: 0;
+                font-size: 0.8571em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) 
+{
+    #skill
+    {
+        padding-top: 30px;
+        
+        .card-body
+        {
+            .progress-container
+            {
+                font-size: 16px;
+            }
+
+            .progress-container.progress-primary
+            {
+                .progress-value
+                {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

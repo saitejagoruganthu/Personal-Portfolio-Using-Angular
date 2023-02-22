@@ -1,0 +1,39 @@
+<div class="section" id="projects">
+    <div class="container cc-education">
+        <div class="h4 text-center mb-4 title">Projects</div>
+
+        <pagination-controls class="proj_pagination" (pageChange)="pageChanged($event)"></pagination-controls>
+        <div class="row">
+
+            <ng-container *ngFor="let project of projects| paginate: config">
+                <div class="col-xl-4 col-md-6 animate-box" data-aos="zoom-in">
+                    <div class="blog-entry">
+                        <div class="card">
+                            <img class="card-img-top" src={{project.imgUrl}} onerror="this.src = 'assets/images/gif.gif'" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">{{project.title}}</h4>
+                                <h5 class="card-text"><span class="tech-text">Technologies Used :</span><br><br><span class="tech-content">{{project.tech}} </span> </h5>
+                                <br>
+                                <h5 class="card-text"><b>Description :</b><br></h5>
+                                <ul class="descContainer">
+                                  <li class="card-text" *ngFor="let desc of project.desc | split">{{desc}}</li>
+                                </ul>
+                                <!-- <h5 class="card-text"><b>Technology :</b><br> {{project.tech}} </h5>
+                                <h5 class="card-text"><b>Description :</b><br> {{project.desc | split}} </h5> -->
+
+                                <div class="btnContainer">
+                                    <ng-container *ngIf = "project.livedemo != ''">
+                                        <a href={{project.livedemo}} class="btn btn-primary ml-2 mr-5" target="_blank">Live Demo</a>
+                                    </ng-container>
+                                    <a href={{project.githurl}} class="btn btn-primary" target="_blank">GithubLink</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+
+        <pagination-controls class="proj_pagination" (pageChange)="pageChanged($event)"></pagination-controls>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+#projects
+{
+    .container
+    {
+        padding: 2em;
+    }
+
+    .title
+    {
+        font-weight: bolder;
+    }
+
+    .proj_pagination
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-entry
+    {
+        width: 100%;
+        float: left;
+        background: #fff;
+        margin-bottom: 3em;
+
+        .card
+        {
+            min-height: 50em;
+            -webkit-box-shadow: 9px 10px 20px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 9px 10px 20px 0px rgba(0,0,0,0.75);
+            box-shadow: 9px 10px 20px 0px rgba(0,0,0,0.75);
+
+            .card-img-top
+            {
+                height: 8em;
+            }
+
+            .card-body
+            {
+                padding-top: 0;
+
+                .card-title
+                {
+                    font-weight: bolder;
+                    margin-top: 8px;
+                    font-size: 16px;
+                }
+
+                .card-text
+                {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: black;
+                }
+
+                .card-text > span.tech-text
+                {
+                    margin-bottom: 1em;
+                    font-weight: bolder;
+                }
+
+                .card-text > span.tech-content
+                {
+                    line-height: 20px;
+                }
+
+                .descContainer
+                {
+                    font-size: 14px;
+                }
+
+                .btnContainer
+                {
+                    display: flex;
+                    justify-content: center;
+
+                    a
+                    {
+                        margin-right: 3em;
+                        background: brown;
+                        border: none;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        transition: all .2s ease-in-out;
+
+                        &:hover
+                        {
+                            transform: scale(1.1);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) 
+{
+    #projects
+    {
+        .blog-entry
+        {
+            .card
+            {
+                min-height: 48em;
+                
+                .card-body
+                {
+                    .card-title
+                    {
+                        font-size: 15px;
+                    }
+
+                    .card-text
+                    {
+                        font-size: 13px;
+                    }
+
+                    .btnContainer
+                    {
+                        a
+                        {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card-img-top {
+        height: 196px;
+    }
+    .blog-entry h4 {
+        min-height: 40px;
+    }
+    .blog-entry h5 {
+        min-height: 30px;
+    }
+}

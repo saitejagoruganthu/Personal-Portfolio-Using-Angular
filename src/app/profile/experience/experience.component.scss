@@ -1,0 +1,231 @@
+#experience
+{
+    padding-top: 70px;
+
+    .container
+    {
+        padding: 1em;
+        
+        .title
+        {
+            font-weight: bolder;
+        }
+    }
+}
+
+
+li
+{
+    padding-top: 5px;
+    font-size: 1em;
+  
+}
+
+.timeline-centered 
+{
+    position: relative;
+    margin-bottom: 30px;
+
+    &::before, &::after
+    {
+        content: " ";
+        display: table;
+    }
+
+    &::after
+    {
+        clear: both;
+    }
+
+    &::before
+    {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 4px;
+        background: #f2f3f7;
+        top: 20px;
+        bottom: 20px;
+        margin-left: 29px;
+    }
+
+    .timeline-entry 
+    {
+        position: relative;
+        margin-top: 5px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        clear: both;
+
+        .timeline-entry-inner 
+        {
+            position: relative;
+            margin-left: -20px;
+
+            .timeline-icon
+            {
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: #2c98f0;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                border-radius: 50%;
+                text-align: center;
+                -moz-box-shadow: 0 0 0 5px #f2f3f7;
+                -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+                box-shadow: 0 0 0 5px #f2f3f7;
+                line-height: 40px;
+                float: left;
+
+                i
+                {
+                    color: #fff;
+                }
+
+                &.color-2
+                {
+                    background: rgb(218, 122, 87);
+                }
+
+                &.color-3
+                {
+                    background: #f9bf3f;
+                }
+
+                &.color-4
+                {
+                    background: #a84cb8;
+                }
+
+                &.color-5
+                {
+                    background: #2fa499;
+                }
+
+                &.color-none
+                {
+                    background: #fff;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                }
+                
+            }
+
+            .timeline-label 
+            {
+                position: relative;
+                background: #f2f3f7;
+                padding: 1.5em;
+                margin-left: 60px;
+                -webkit-background-clip: padding-box;
+                -moz-background-clip: padding;
+                background-clip: padding-box;
+
+                &::after
+                {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 9px 9px 9px 0;
+                    border-color: transparent #f2f3f7 transparent transparent;
+                    left: 0;
+                    top: 10px;
+                    margin-left: -9px;
+                }
+
+                p + p 
+                {
+                    margin-top: 15px; 
+                }
+
+                h2 
+                {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                h2 a 
+                {
+                    color: #000; 
+                }
+
+                h2 span 
+                {
+                    -webkit-opacity: 5;
+                    -moz-opacity: .5;
+                    opacity: .5;
+                    -ms-filter: alpha(opacity=40);
+                    filter: alpha(opacity=40);
+                    font-size: 16px;
+                }
+
+                h4
+                {
+                    margin-top: -15px;
+                    color: #545755;
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+
+                span
+                {
+                    padding-left: 1em;
+                    color: #000;font-weight: 600;
+                }
+
+                p
+                {
+
+                    font-size: 16px;font-weight:500;
+                }
+
+                ul
+                {
+                    font-size: 16px;font-weight:400; font-family: "Quicksand", Arial, sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) 
+{
+    .timeline-centered
+    {
+        .timeline-entry
+        {
+            .timeline-entry-inner
+            {
+                .timeline-label
+                {
+                    h2
+                    {
+                        font-size: 18px;
+                    }
+
+                    span
+                    {
+                        font-size: 14px;
+                    }
+
+                    h4
+                    {
+                        font-size: 16px;
+                    }
+
+                    ul
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

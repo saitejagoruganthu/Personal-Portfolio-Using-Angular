@@ -1,0 +1,48 @@
+.footer
+{
+    .btn
+    {
+        color: #888;
+        border: 0;
+        padding: 0.5rem 0.7rem;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 0.8571em;
+        line-height: 1.35em;
+        margin: 5px 1px;
+        border-radius: 0.1875rem;
+        cursor: pointer;
+
+        &:hover
+        {
+            color: rgb(218, 122, 87);
+        }
+    }
+
+    .text-center
+    {
+        p
+        {
+            line-height: 1.61em;
+        }
+    }
+}
+
+@media screen and (max-width:767px) 
+{
+    .footer
+    {
+        .btn
+        {
+            font-size: 10px;
+        }
+
+        .text-center
+        {
+            p
+            {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+<swiper
+      effect="cube"
+      grab-cursor="true"
+      cube-effect-shadow="true"
+      cube-effect-slide-shadows="true"
+      cube-effect-shadow-offset="20"
+      cube-effect-shadow-scale="0.94"
+      [loop]=true
+      [slidesPerView]="2"
+      [spaceBetween]="50"
+      [navigation]="false"
+      [pagination]="{ clickable: true }"
+      [keyboard]=true
+      [autoplay]="autoplayobj"
+    >
+      <ng-template swiperSlide>
+        <div class="slide1_wrapper">
+            <div class="myPicContainer">
+                <img src="assets/images/myImage6.png" alt="My Picture" class="myPic">
+            </div>
+            <div class="btnContainer">
+                <a class="myBtn hireMe" href="#contact">Hire Me</a>
+                <!-- <button class="myBtn resume">Resume</button> -->
+                <a class="myBtn btn btn-primary resume" href={{cvUrl}} target="_blank" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Resume</a>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="slide2_wrapper">
+            <div class="aboutTextContainer">
+                <h3 class="aboutIntroText1">Did you know?</h3>
+                <h3 class="aboutIntroText2">I completed my bachelor's degree with a Gold Medal 
+                    <span class="medalIcon">
+                        <img src="assets/images/medal.png" alt="Gold Medal Icon" class="medal">
+                    </span> for the academic excellence. </h3>
+                <h3 class="aboutText">Want to know more about me? Click below</h3>
+            </div>
+            <div class="aboutBtnContainer">
+                <a class="myBtn aboutBtn" href="#about">About Me</a>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="slide3_wrapper">
+            <div class="skillsTextContainer">
+                <h3 class="skillsIntroText1">Did you know?</h3>
+                <h3 class="skillsIntroText2">I excel in Java, MEAN and LAMP stack implementations. </h3>
+                <h3 class="skillsText">Want to know the whole list of my skills? Click below</h3>
+            </div>
+            <div class="skillsBtnContainer">
+                <a class="myBtn skillsBtn" href="#skill">My Skills</a>
+            </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="slide4_wrapper">
+            <div class="projectsTextContainer">
+                <h3 class="projectsIntroText1">Did you know?</h3>
+                <h3 class="projectsIntroText2">I did projects related to both hardware and software.</h3>
+                <h3 class="projectsText">Want to know more about my projects? Click below</h3>
+            </div>
+            <div class="projectsBtnContainer">
+                <a class="myBtn projectsBtn" href="#projects">My Projects</a>
+            </div>
+        </div>
+      </ng-template>
+
+      <!-- <ng-template swiperSlide>
+        <img class="test" src=" https://swiperjs.com/demos/images/nature-1.jpg" />
+      </ng-template>
+      <ng-template swiperSlide>
+        <img class="test" src=" https://swiperjs.com/demos/images/nature-2.jpg" />
+      </ng-template>
+      <ng-template swiperSlide>
+        <img class="test" src=" https://swiperjs.com/demos/images/nature-3.jpg" />
+      </ng-template>
+      <ng-template swiperSlide>
+        <img class="test" src=" https://swiperjs.com/demos/images/nature-4.jpg" />
+      </ng-template> -->
+</swiper>
