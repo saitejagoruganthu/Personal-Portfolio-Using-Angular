@@ -21,6 +21,10 @@ export class TypewriterComponent implements OnInit {
 
     writer
       .changeCursorColor('white')
+      .type('Software Engineer.')
+      .rest(500)
+      .changeOps({ deleteSpeed: 10 })
+      .remove(18)
       .type('Full-Stack Developer.')
       .rest(500)
       .changeOps({ deleteSpeed: 10 })
