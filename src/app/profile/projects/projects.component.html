@@ -6,7 +6,7 @@
         <div class="row">
 
             <ng-container *ngFor="let project of projects| paginate: config">
-                <div class="col-xl-4 col-md-6 animate-box" data-aos="zoom-in">
+                <div class="col-xl-4 col-md-6">
                     <div class="blog-entry">
                         <div class="card">
                             <img class="card-img-top" src={{project.imgUrl}} onerror="this.src = 'assets/images/gif.gif'" alt="Card image" style="width:100%">
