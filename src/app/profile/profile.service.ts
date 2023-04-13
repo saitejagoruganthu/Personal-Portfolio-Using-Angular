@@ -15,6 +15,19 @@ export class ProfileService {
   projects:any = [
     {
       id: 1,
+      title: 'DALL-E Clone Using MERN Stack',
+      desc: `Developed and hosted the DALL-E clone application, an AI image generation tool that accepts a prompt where users can describe an image in their own words, and the AI will generate an image related to the prompt provided. ^
+      Included a feature to share the generated AI image with the community by adding it to the MongoDB Atlas cluster. ^
+      Devised the backend functionality that uses OpenAI APIs to communicate with the DALL-E deep learning model. ^
+      Added cloudinary URL support for the AI-generated images to improve the throughput by 40%. ^
+      Embedded Tailwind CSS to build and style the application quickly and efficiently.`,
+      livedemo: 'https://dalle.saitejagoruganthu.com/',
+      githurl: 'https://github.com/saitejagoruganthu/DALL-E-Clone-Using-MERN',
+      imgUrl: 'assets/images/DALLECloneApp.png',
+      tech: 'React, TailWind CSS, OpenAI, Node JS, Express JS, MongoDB, Cloudinary, MongoDB Atlas'
+    },
+    {
+      id: 2,
       title: 'Task Manager Application Using MEAN Stack',
       desc: `Developed a task-manager application from scratch using Angular-Material, Express JS and Mongo DB. ^
       Implemented the login and sign-up features using the JWT authentication technique where an access token is created for each user and refreshed every 15 min. ^
@@ -29,7 +42,7 @@ export class ProfileService {
       tech: 'Angular 15, Angular Material, Node JS, Express JS, Mongo DB, JWT Authentication, Mongo DB Atlas Cloud Service'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Cross Domain Enterprise Online Market Place',
       desc: `Designed, developed, and hosted an online marketplace created by merging three different company websites. ^
       Created a sign-up feature for the whole market place. ^
@@ -45,7 +58,7 @@ export class ProfileService {
     },
 
     {
-      id: 3,
+      id: 4,
       title: 'Personal Portfolio Using Angular 15',
       desc: `Implemented a personal portfolio website using angular and bootstrap frameworks. ^In my view, portfolios are a great way to demonstrate the competencies you would list on a resume or talk about in an interview — they allow you to show and not just tell. ^ 
       During a job search, the portfolio showcases your work to potential employers. ^
@@ -59,7 +72,7 @@ export class ProfileService {
 
 
     {
-      id: 4,
+      id: 5,
       title: '3D Graphics Including Shading and Diffuse Reflection',
       desc: `Written driver logic in MCUXpresso IDE using C language to render a 3D cube which is elevated towards Z-axis and has a point light source in the world-coordinate system. This elevation and light source coordinate is responsible for the shadow on the X-Y plane. ^
       Along with that, able to achieve diffuse reflection with respect to the color red. ^
@@ -71,7 +84,7 @@ export class ProfileService {
     },
 
     {
-      id: 5,
+      id: 6,
       title: '2D Graphics Rendering Using LPC1769 Microprocessor System',
       desc: `Written device driver logic between LPC1769 and TFT LCD Display using SPI protocol to transmit live screensavers such as Rotating Squares and Trees generation. ^
       At first, written the base API drawLine(), which is again used intricately to draw squares and trees at will. ^
@@ -84,7 +97,7 @@ export class ProfileService {
 
 
     {
-      id: 6,
+      id: 7,
       title: 'Hand-Gesture Controlled Robot Using Arduino',
       desc: `Designed a hand-gesture controlled car using ADXL335 (a 3-axes Accelerometer sensor), Arduino Nano as a micro-controller, and an RF Transmitter-Receiver pair to transmit and receive signals. ^
       Built and formulated a circuit board for both transmitter and receiver sides and aided in writing the Arduino Nano code logic. ^
@@ -155,7 +168,7 @@ export class ProfileService {
     },
     {
         'id': '5',
-        'skill': 'Javascript, JQuery, React.js',
+        'skill': 'Javascript, JQuery, React.js, Vue.js',
         'progress': '85%'
     },
     {
@@ -180,7 +193,7 @@ export class ProfileService {
     },
     {
         'id': '10',
-        'skill': 'Spring Boot, Docker, Kubernetes',
+        'skill': 'Spring Boot, Docker, Kubernetes, AWS',
         'progress': '70%'
     }
   ];
