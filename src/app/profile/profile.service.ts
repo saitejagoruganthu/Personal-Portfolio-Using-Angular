@@ -148,7 +148,7 @@ export class ProfileService {
   ]
 
   about2 = `Software Developer with 3+ years of experience. ^
-  Worked with Software Development Life Cycle(SDLC) and  agile methodologies. ^
+  Worked with Software Development Life Cycle(SDLC), Agile methodologies, and Low-code development. ^
   Expertise in Angular 2+ all versions along with its material design, React, Javascript,  Node JS, Express JS, Java and UI with Responsive Designs. ^
   Have excellent knowledge in Python, Jquery, Bootstrap, MongoDB, and MySQL. ^
   Apart from software, I excel in hardware aspects which includes Bluetooth, Embedded systems and PCB designing. ^
@@ -156,12 +156,12 @@ export class ProfileService {
   `
 
   about = "I am intuitive in nature, lover of innovation and everything related to generating new knowledge. I tackle problems with a smile and solve them as soon as possible. Very calculative with respect to the time I spend and work I do."
-  resumeurl = "https://docs.google.com/document/d/17WDVlslfgW_5-YKQNvFaoD-ZxTBcBgAW/edit?usp=share_link&ouid=117815726226256458495&rtpof=true&sd=true"
+  resumeurl = "https://docs.google.com/document/d/1Xdx7yGbNm3kIA8RReXx6KeMNzF89iDBV/edit?usp=sharing&ouid=117815726226256458495&rtpof=true&sd=true"
 
   skillsData: any = [
     {
       'id': '1',
-      'skill': 'C, Java',
+      'skill': 'C++, Java, Python',
       'progress': '90%'
     },
     {
@@ -181,7 +181,7 @@ export class ProfileService {
     },
     {
         'id': '5',
-        'skill': 'Javascript, JQuery, React.js, Vue.js',
+        'skill': 'Javascript, React.js, Redux, Next.js, Vue.js',
         'progress': '85%'
     },
     {
@@ -191,7 +191,7 @@ export class ProfileService {
     },
     {
       'id': '7',
-      'skill': 'Node.js, Express.js',
+      'skill': 'Node.js, Express.js, JQuery',
       'progress': '90%'
     },
     {
@@ -217,15 +217,14 @@ export class ProfileService {
       company: 'Tata Consultancy Services',
       location: 'Hyderabad, India',
       timeline: 'May 2019 - July 2022',
-      role: 'Systems Engineer - Developer',
-      tech: 'Java, Angular, Angular-Material, Spring-Boot, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MongoDB, Kubernetes',
+      role: 'Full Stack Software Engineer',
+      tech: 'Java, Angular, React, Vue, Low-code development, Spring-Boot, Bootstrap, NodeJS, ExpressJS, PostgreSQL, MongoDB, Kubernetes',
       work: `
-      Designed and Developed a Bank Customer Application using Microservices architecture including Spring Boot, interactive user interface with Angular or React, querying PostgreSQL database, and deployed using Kubernetes. ^
-      Led a team of 22 fresh recruits to develop a user-friendly angular-based dashboard using material design guidelines. ^
-      Bagged the Beyond Excellence Award for designing and developing the Advanced-Search component using the Angular framework with material design which optimized the user interface for the search functionality. ^
-      Developed and maintained server and GUI Java kits to migrate models from Monolithic to Microservices architecture which led to a 40% increase in productivity. ^
-      Performed 50+ weekly code reviews and optimized the code to decrease the latency factor by 55%. ^
-      Initiated and co-organized Fun-Friday activities to ease stress and maintain a work-life balance.
+      Designed and launched variety of applications using Microservices architecture with Spring Boot as backend, interactive UI with Angular and React, querying PostgreSQL database, and deployed using Kubernetes. ^
+      Contributed to a product that facilitated low-code development, enabling the rapid creation of web and mobile applications, leading to a 30% reduction in development time and increased team productivity. ^
+      Led a team of 22 fresh recruits to develop a user-friendly Angular dashboard utilizing material design guidelines. ^
+      Bagged the Beyond Excellence Award for developing the Advanced-Search component, leveraging the Angular-Material framework to deliver an optimized user interface for search functionality. ^
+      Enhanced and maintained server and GUI Java kits to migrate models from Monolithic to Microservices architecture, resulting in a 40% increase in productivity.
       `
     },
 
@@ -235,13 +234,12 @@ export class ProfileService {
       location: 'Hyderabad, India',
       timeline: 'Sep 2018 - Apr 2019',
       role: 'Software Developer Intern',
-      tech: 'HTML, CSS, Javascript, JQuery, Bootstrap, Java, JDBC, OracleDB',
+      tech: 'HTML, CSS, Javascript, JQuery, Bootstrap, Angular, React, Java, DSA, OracleDB',
       work: `
-      Worked on building a website called Dispur Wireless, a subscriber-vendor telecommunication website that can display usage statistics for each user. ^
-      Built a Java application that alters an XML file into another XML file in a customizable format. ^
-      Launched a simple application to perform CRUD operations on Oracle DB using JDBC drivers. ^
-
-      Resolved 15+ internal code bugs reported by the Quality Assurance (QA) team.
+      Collaborated with cross-functional teams to design, develop, and deploy clean and scalable code for web applications, adhering to best practices and coding standards. ^
+      Utilized JavaScript libraries such as React, AngularJS, and jQuery to build responsive user interfaces. ^
+      Applied knowledge of data structures, algorithms, and OOPS principles to optimize application performance. ^
+      Resolved over 15 internal code bugs reported by the Quality Assurance (QA) team.
         `
     },
 
